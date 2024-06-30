@@ -1,0 +1,69 @@
+
+
+@import "../../global.scss";
+
+
+.ch{
+ 
+    
+    .ch_top{
+        padding: 20px;
+        text-align: center;
+        background-color: #140320;
+        background:linear-gradient(to bottom, #140320, #2a0740 );
+        font-size: 30px;
+        position: relative;
+        margin-bottom: 200px;
+        @include mobile {
+                margin-bottom: 50px;
+            }
+        h1{
+            width: 60%;
+            margin: 40px auto;
+            color: white;
+            @include mobile{
+                font-size: 30px;
+                width: 100%;
+            }
+        }
+        p{
+            width: 70%;
+            margin: 10px auto;
+            padding-bottom: 30px;
+            font-size: 20px;
+            color: white;
+            @include mobile {
+                    font-size: 18px;
+                    width: 100%;
+                }
+        }
+        .ch_anim_img{
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            position: absolute;
+            @include mobile{
+                display: none;
+            }
+        }
+        .img_one{
+            left: 10%;
+            top: 50%;
+
+        }
+                .img_two {
+                    left: 15%;
+                    top: 30%;
+                }
+                                 .img_three {
+                                     right: 15%;
+                                     top: 30%;
+                                 }
+                                                                 .img_four {
+                                                                     right: 10%;
+                                                                     top: 50%;
+                                
+                                                                 }
+    }
+    .ch_bottom{}
+}

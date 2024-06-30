@@ -1,0 +1,109 @@
+@import "../../global.scss";
+
+.factory {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 150px 0px;
+
+    .ftop {
+        h1 {
+            font-size: 55px;
+            color: white;
+
+            @include mobile {
+                font-size: 35px;
+            }
+        }
+    }
+
+    .fbottom {
+        width: 70%;
+        height: 400px;
+        border-radius: 20px;
+        margin: 20px 0px;
+
+        .factoritems {
+            background-color: white;
+            border-radius: 20px;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+
+            .cart {
+                width: 100%;
+                height: 100%;
+                border-radius: 20px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: rebeccapurple;
+
+                @include mobile {
+                    padding: 10px;
+                }
+
+                .cartleft {
+                    width: 60%;
+                    height: 100% !important;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 20px;
+
+                    h1 {
+                        font-size: 50px;
+                        color: white;
+                        text-transform: capitalize;
+                        @include mobile{
+                            font-size: 25px;
+                        }
+
+                    }
+
+                    p {
+                        font-size: 20px;
+                        color: white;
+                        text-transform: capitalize;
+
+                        @include mobile {
+                            font-size: 14px;
+                        }
+
+                        span {
+                            color: $maincolor;
+                            background-color: yellowgreen;
+                            padding: 5px;
+                            border-radius: 5px;
+
+                            @include mobile {
+                                background-color: transparent;
+                                color: white;
+                            }
+                        }
+
+                    }
+                }
+
+                .cartright {
+                    width: 40%;
+                    height: 100%;
+                    background-color: white;
+
+                    @include mobile {
+                        display: none;
+                    }
+
+                    img {
+                        width: 100%;
+                        height: 400px;
+                        object-fit: cover;
+                    }
+                }
+            }
+        }
+    }
+
+}

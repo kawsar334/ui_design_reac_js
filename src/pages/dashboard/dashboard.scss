@@ -1,0 +1,223 @@
+@import "../../global.scss";
+
+
+.dashboard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    .dashboardtop {
+        width: 100%;
+
+        p {
+            text-align: center;
+            background-color: #05030e;
+            width: 40%;
+            margin: 10px auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-radius: 30px;
+            height: 60px;
+            overflow: hidden;
+            padding: 5px;
+
+            span {
+                color: white;
+                margin-left: 20px;
+                font-size: 20px;
+            }
+
+
+            a {
+                height: 100%;
+                width: 150px;
+                color: white;
+                font-size: 20px;
+                background: linear-gradient(to right, #5058fe, #da3df4);
+                border-radius: 30px;
+                border: none;
+                cursor: pointer;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-decoration: none;
+
+
+            }
+
+            @include mobile {
+                width: 80%;
+            }
+
+        }
+
+        h1 {
+            margin: 20px 0px;
+            margin-left: 50px;
+            color: white;
+            font-size: 30px;
+
+            span {
+                color: rebeccapurple;
+            }
+        }
+    }
+
+    .dashboardmiddle {
+        width: 80%;
+        margin: 40px;
+
+        @include mobile {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin: 20px;
+        }
+
+        button {
+            all: unset;
+            padding: 20px;
+            border: 2px solid rebeccapurple;
+            border-radius: 20px;
+            background-color: rgba(0, 0, 0, 0.3);
+            font-size: 20px;
+            color: white;
+            text-transform: capitalize;
+            z-index: 11;
+            cursor: pointer;
+            margin-left: 20px;
+            transition: all 0.5s ease;
+
+            @include mobile {
+                padding: 5px 10px;
+                margin-left: 10px;
+            }
+
+            &:hover {
+                background-color: rgba(0, 0, 0, 0.8);
+            }
+
+        }
+    }
+
+    .dashboardbottom {
+        width: 100%;
+
+        .bottom_items {
+            width: 80%;
+            margin: 20px auto;
+            display: flex;
+            justify-content: flex-start;
+            gap: 20px;
+            flex-direction: column;
+
+            @include mobile {
+                width: 100%;
+            }
+
+            .bottom_item {
+                width: 70%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 20px;
+                background-color: #100530;
+                border: 1px solid rgba(255, 255, 255, 0.3);
+                border-radius: 20px;
+                padding: 20px;
+
+                @include mobile {
+                    flex-direction: column;
+                    width: 90%;
+                    gap: 10px;
+                    align-items: flex-start;
+                    padding: 10px;
+                    margin: 10px auto;
+                }
+
+                .b_item_left {
+                    @include mobile {
+                        width: 100%;
+                    }
+
+                    img {
+                        width: 400px;
+                        height: 200px;
+                        object-fit: cover;
+
+                        @include mobile {
+                            width: 70%;
+
+                        }
+                    }
+                }
+
+                .b_item_right {
+                    width: 400px;
+                    height: max-content;
+                    display: flex;
+                    justify-content: center;
+                    align-items: flex-start;
+                    flex-direction: column;
+                    gap: 20px;
+
+
+                    .title {
+                        font-size: 30px;
+                        margin: 10px 0px;
+                        color: lightgray;
+                        width: 90%;
+
+                        @include mobile {
+                            font-size: 25px;
+                            margin: 5px;
+                        }
+                    }
+
+                    .name {
+                        font-size: 20px;
+                        color: gray;
+
+                        @include mobile {
+                            font-size: 16px;
+                        }
+
+                    }
+
+                    .progressbar {
+                        width: 300px;
+                        height: 20px;
+                        border-radius: 20px;
+                        background-color: gray;
+                    }
+
+                    button {
+                        background: linear-gradient(to right, #5058fe, #da3df4);
+                        padding: 10px 20px;
+                        border-radius: 5px;
+                        transition: 0.5s all ease !important;
+                        font-weight: 500;
+                        color: white;
+                        font-size: 22px;
+
+                        @include mobile {
+                            align-self: center;
+                            width: max-content;
+                            margin-top: 10px;
+                        }
+
+                        cursor: pointer;
+
+                        &:hover {
+                            background: linear-gradient(to left, #5058fe, transparent);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

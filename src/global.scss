@@ -1,0 +1,22 @@
+
+
+$maincolor:rgb(23, 10, 54);
+$rgb:rgb(0,0,0,0.3);
+
+
+
+
+.app{
+    background-color: $maincolor;
+    height: 100vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    
+   
+}
+
+@mixin mobile{
+    @media (max-width:#{778px}) {
+        @content
+    }
+}

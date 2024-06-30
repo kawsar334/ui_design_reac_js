@@ -1,0 +1,189 @@
+@import "../../global.scss";
+
+
+
+.success {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 40px;
+    width: 80%;
+    margin: 40px auto;
+    padding: 20px !important;
+    
+    
+        @include mobile {
+            width: 100% !important;
+            overflow: hidden;
+        }
+
+    .successtop {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 20px 0px;
+    
+        
+            @include mobile {
+               flex-direction: column;
+            }
+
+        .s_top_left {
+
+            h1 {
+                font-size: 35px;
+                color: white;
+            }
+
+            p {
+                width: 600px;
+                font-size: 20px;
+                color: white;
+            
+                
+                    @include mobile {
+                        width: 90% !important;
+                    }
+            }
+        }
+
+        .s_top_right {
+            position: relative;
+            width: 250px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            padding: 10px;
+            border-radius: 5px;
+            background-color: #0d0e1f;
+
+            h2 {
+                color: white;
+                display: flex;
+                gap: 20px;
+                align-items: center;
+                // background-color:gray;
+                padding: 10px;
+                text-transform: capitalize;
+                cursor: pointer;
+                font-size: 20px;
+            }
+
+            ul {
+                background-color: #0d0e1f;
+                position: absolute;
+                width: 100%;
+                height: max-content;
+                padding: 10px;
+                list-style: none;
+                left: 0;
+                border-radius: 5px;
+                margin-top: 10px;
+
+                li {
+                    padding: 10px;
+                    font-size: 20px;
+                    cursor: pointer;
+                    margin-bottom: 20px;
+                    text-transform: capitalize;
+                    color: white;
+                    border-radius: 10px;
+
+                    &:hover {
+                        background-color: rgba(255, 255, 255, 0.1);
+
+                    }
+                }
+            }
+        }
+    }
+
+    .successbottom {
+        width: 100%;
+       
+
+        .s_items {
+            width: 100%;
+            display: flex !important;
+            justify-content: space-between;
+            align-items: center;
+            gap: 10px;
+            flex-wrap: wrap;
+           
+
+            .s_item {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 10px;
+                width: 47%;
+                padding: 20px;
+                border-radius: 20px;
+                cursor: pointer;
+                text-transform: capitalize;
+                background-color: rgb(14, 15, 31);
+               
+                @include mobile {
+                    width: 94%;
+                    flex-direction: column;
+                    justify-content: flex-start;
+                    align-items: center;
+                }
+
+                .item_left {
+                    // display: flex;
+                    width: 50%;
+
+                    img {
+                        width: 100%;
+                        height: 180px;
+                        object-fit: cover;
+                        border-radius: 10px;
+                        @include mobile {
+                            width: 100px;
+                            height: 100px;
+                            border-radius: 50%;
+                        }
+                    }
+
+                }
+
+                .item_right {
+                    display: flex;
+                    justify-content: center;
+                    align-items: flex-start;
+                    gap: 10px;
+                    flex-direction: column;
+                    padding: 10px;
+
+                    span {
+                        font-size: 16px;
+                        color: lightgray;
+                        font-weight: 500;
+                    }
+
+                    h1 {
+                        color: white;
+                        font-size: 25px;
+                    }
+
+                    h2 {
+                        font-size: 20px;
+                        color: gray;
+
+                    }
+
+                    p {
+                        font-size: 18px;
+                        color: lightgray;
+
+                        span {
+                            color: rebeccapurple;
+
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

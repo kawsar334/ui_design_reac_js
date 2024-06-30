@@ -1,0 +1,78 @@
+@import "../../global.scss";
+
+.menu_container {
+    position: absolute;
+    top: 90px;
+    width: 100%;
+    height: max-content;
+    padding: 10px;
+    // border-radius: 10px;
+    display: none;
+    background-color: black;
+    overflow: scroll;
+ 
+    
+
+    @include mobile {
+        display: block;
+    }
+    .menu {
+
+
+        ul {
+            list-style: none;
+
+            li {
+                padding: 20px;
+                margin-bottom: 10px;
+                margin-left: 20px;
+                border-bottom: 1px solid rgba(255,255,255,0.1);
+
+                a {
+                    text-decoration: none;
+                    font-size: 20px;
+                    text-transform: capitalize;
+                    color: white;
+
+                }
+                &:hover {
+                        background-color: rgb(0, 0, 0, 0.2);
+                    }
+            }
+
+            .enrollbtn {
+                background: linear-gradient(to right, #5058fe, #da3df4);
+                padding: 10px 20px;
+                border-radius: 5px;
+                transition: 0.5s all ease !important;
+                font-weight: 500;
+
+                @include mobile {
+                    align-self: center;
+                    width: max-content;
+                    margin-top: 10px;
+                }
+
+                cursor: pointer;
+
+                &:hover {
+                    background: linear-gradient(to left, #5058fe, transparent);
+                }
+            }
+        }
+
+    }
+}
+
+.p_picture {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    img {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+    }
+
+}

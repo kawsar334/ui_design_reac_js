@@ -1,0 +1,243 @@
+@import "../../global.scss";
+
+
+
+.profile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+    padding: 20px;
+    width: 100%;
+    
+    @include mobile{
+        padding: 0px;
+        justify-content: flex-start;
+        margin: 0px;
+    }
+
+    .profilewrapper {
+        width: 90%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 50px;
+
+
+        @include mobile {}
+
+        .profiletop {
+            width: 100%;
+
+            .profile_top_main {
+                width: 100%;
+                height: 100px;
+                border: 1px solid crimson;
+                border-radius: 20px;
+
+                .profile_top_progress_content {
+                    display: flex;
+                    justify-content: space-between;
+                    width: 90%;
+                    margin: 10px auto;
+                    align-items: center;
+
+                    span {
+                        font-size: 20px;
+                        color: crimson;
+                    }
+                }
+
+                .profil_progress {
+                    width: 90%;
+                    height: 18px;
+                    border: 1px solid lightgray;
+                    border-radius: 20px;
+                    background-color: rgba(0, 0, 0, 0.4);
+                    overflow: hidden;
+                    margin: 5px auto;
+
+                    .progress_mini {
+                        height: 100%;
+                        width: 50%;
+                        background-color: rgb(182, 51, 77);
+
+                    }
+
+                }
+
+                h3 {
+                    color: gray;
+                    width: 80%;
+                    margin-left: 100px;
+
+                }
+            }
+        }
+
+        // profilebottom
+        .profilebottom {
+            width: 100%;
+            display: flex;
+            gap: 40px;
+
+            @include mobile {
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            .p_sidebar {
+                flex: 1;
+                background-color: #170f21;
+                border-radius: 20px;
+                overflow: hidden;
+                color: white;
+                @include mobile {
+                    width: 100%;
+                }
+
+                .sidebar_items {
+                    display: flex;
+                    justify-content: center;
+                    align-items: flex-start;
+                    background-color: #170f21;
+                    flex-direction: column;
+                    padding-left: 30px;
+                    gap: 20px;
+                    width: 100%;
+                    .sidebar_item{
+                        text-transform: capitalize;
+                        width: 90%;
+                        img{
+                            width: 80px;
+                            height: 80px;
+                            display: block;
+                            margin: 20px auto;
+                            border-radius: 50%;
+                        }
+                        h1{
+                            font-size: 25px;
+                            color: gray;
+                            font-weight: 500;
+                            margin: 10px;
+
+                        }
+                        p{
+                            font-size: 18px;
+
+                        }
+                        .progressbar{
+                            width: 100%;
+                            height: 20px;
+                            border: 1px solid rgba(255, 255, 255, 0.4);
+                            border-radius: 20px;
+                            overflow: hidden;
+                            margin-bottom: 10px;
+                            .miniprogress{
+                                width: 30%;
+                                height: 100%;
+                                background-color: gray;
+                                border-radius: 20px;
+                            }
+                        }
+                        .c_y_p_p{
+                            margin-top: 100px 0px !important;
+                        }
+                        ul{
+                            display: flex;
+                            flex-direction: column;
+                            list-style: none;
+                            gap: 20px;
+                            li{
+                                margin-bottom: 20px;
+
+                            }
+                        }
+
+                    }
+                }
+
+            }
+
+            .p_contents {
+                color: white;
+                flex: 3;
+                background-color: #170f21;
+                border-radius: 20px;
+
+                .p_content{
+                    .p_top{
+                        h1{
+                            display: flex;
+                            justify-content: space-between;
+                            padding: 10px;
+                            border-bottom: 1px dashed lightgray;
+                            margin: 20px;
+                            span{
+                                font-size: 20px;
+                                cursor: pointer;
+                                color: teal;
+                            }
+                        }
+                        .p_items{
+                            display: flex;
+                            justify-content: flex-start;
+                            align-items: center;
+                            flex-wrap: wrap;
+                            .p_item{
+                                display: flex;
+                                justify-content: space-between;
+                                align-items: flex-start;
+                                flex-direction: column;
+                                margin: 20px;
+                                width:43%;
+                                border-bottom: 1px solid rgba(255,255,255,0.1);
+                                padding: 10px;
+                                h2{
+                                    color: gray;
+                                    text-transform: capitalize;
+                                    margin-bottom: 10px;
+                                }
+                                p{
+                                    font-size: 20px;
+                                    color: white;
+                                }
+                            }
+                        }
+                    }
+
+                }
+                @include mobile {
+                    width: 100%;
+
+                }
+
+            }
+        }
+    }
+}
+
+// 
+.myprofile{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0px;
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+    .my_profile_content{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 30px;
+        width: 70%;
+        height: 50px;
+        img{
+            width: 35px !important;
+            height: 35px !important;
+            border-radius: 50%;
+        }
+    }
+}

@@ -1,0 +1,19 @@
+
+@import "../../global.scss";
+.slideitem{
+    img{
+        width: 90%;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 10px;
+        cursor: pointer;
+        clip-path: circle(50.4% at 50% 68%);
+        clip-path: circle(50% at 50% 50%);
+        
+
+       
+        @include mobile{
+            height: 130px;
+        }
+    }
+}
